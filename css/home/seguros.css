@@ -1,0 +1,92 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+}
+
+.seguros {
+  padding: 40px 20px;
+}
+.seguros-flex {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: center;
+}
+.seguros-cards {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: var(--cor-12);
+  border-radius: 5px;
+  padding: 50px 80px;
+  gap: 20px;
+}
+
+.seguros-cards li {
+  margin-top: 20px;
+}
+
+.seguros-cards a {
+  grid-column: 1;
+  margin-top: 20px;
+}
+
+.botao-prata {
+  background-color: var(--cor-9);
+  display: inline-block;
+  color: var(--cor-2);
+  text-transform: uppercase;
+  margin: auto;
+  padding: 15px 25px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.botao-prata:hover {
+  background-color: var(--cor-8);
+}
+.botao-ouro {
+  background: linear-gradient(#ffbf00, #f2a50c);
+  display: inline-block;
+  color: var(--cor-11);
+  text-transform: uppercase;
+  margin: auto;
+  padding: 15px 25px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.botao-ouro:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.seguros-cards span::after {
+  content: "mensal";
+  display: block;
+  font: 500 0.875rem/1.35 "Poppins", sans-serif;
+  position: relative;
+  left: 50px;
+}
+
+@media (max-width: 1000px) {
+  .seguros-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--cor-12);
+    border-radius: 5px;
+    padding: 50px 80px;
+    gap: 20px;
+  }
+  .seguros-flex {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .seguros-cards {
+    margin-top: 40px;
+  }
+  .seguros-flex {
+    flex-direction: column;
+  }
+  .font-1-xl {
+    font: 600 2rem/1.25 "Poppins", sans-serif;
+  }
+}

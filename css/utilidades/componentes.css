@@ -1,0 +1,66 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.botao-global {
+  background: linear-gradient(#ffbf00, #f2a50c);
+  padding: 16px 32px;
+  display: inline-block;
+  font-size: 18px;
+  color: var(--cor-p5);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.botao-global:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao-2 {
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  color: var(--cor-p1);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.botao-2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  position: absolute;
+  margin-top: 4px;
+}
+
+.botao-2:hover {
+  color: var(--cor-0);
+}
+
+.botao-2:hover::after {
+  background-color: var(--cor-0);
+}
+.seguros-cards li {
+  position: relative;
+}
+.seguros-cards li::before {
+  content: "✔";
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  color: var(--cor-p1);
+}
